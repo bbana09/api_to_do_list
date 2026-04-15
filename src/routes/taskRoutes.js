@@ -10,7 +10,7 @@ module.exports = (req, res) => {
     }
     //POST / tasks
     if(url ==='/tasks' && method === 'POST') {
-        return taskController.listTasks(req, res);
+        return taskController.createTask(req, res);
     }
     // PUT /tasks/:id
     if (url.startsWith('/tasks/')&& method === 'PUT') {
